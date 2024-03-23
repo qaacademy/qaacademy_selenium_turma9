@@ -1,7 +1,9 @@
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class ExerciciosSelenium {
 
@@ -23,8 +25,52 @@ public class ExerciciosSelenium {
         //Email
         driver.findElement(By.xpath(" //body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[3]/div[1]/input[1]")).sendKeys("contato@qaacademy.com.br");
         //Telefone
-        driver.findElement(By.xpath(" //body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[4]/div[1]/input[1]")).sendKeys("11977413512");
+        driver.findElement(By.xpath(" //body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[4]/div[1]/input[1]")).sendKeys("1234567890");
 
+        //Gender
+        driver.findElement(By.xpath("//body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[5]/div[1]/label[1]/input[1]")).click();
+
+        //Selecionar o hobie
+        driver.findElement(By.xpath("//input[@id='checkbox2']")).click();
+
+        //Expandir lista languages
+        driver.findElement(By.xpath("//div[@id='msdd']")).click();
+        Thread.sleep(1000);
+        //Clica na linguagem
+        driver.findElement(By.xpath("//a[contains(text(),'Portuguese')]")).click();
+
+        //Lista skils Option
+        Select select = new Select(driver.findElement(By.xpath("//select[@id='Skills']")));
+        select.selectByVisibleText("Java");
+
+        //Lista Paises
+
+        driver.findElement(By.xpath("//body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[10]/div[1]/span[1]/span[1]/span[1]")).click();
+        driver.findElement(By.xpath("//li[contains(text(),'United States of America')]")).click();
+
+        //Lista Select Data de nascimento
+
+        WebElement elementAno = driver.findElement(By.xpath("//select[@id='yearbox']"));
+        Select selectAno = new Select(elementAno);
+        selectAno.selectByVisibleText("2009");
+
+        WebElement elementMes = driver.findElement(By.xpath("//body/section[@id='section']/div[1]/div[1]/div[2]/form[1]/div[11]/div[2]/select[1]"));
+        Select selectMes = new Select(elementMes);
+        selectMes.selectByVisibleText("December");
+
+        WebElement elementDia = driver.findElement(By.xpath("//select[@id='daybox']"));
+        Select selectDia = new Select(elementDia);
+        selectDia.selectByVisibleText("25");
+
+        //Preenchemos a senhas
+        driver.findElement(By.xpath("//input[@id='firstpassword']")).sendKeys("QA Academy");
+        driver.findElement(By.xpath("//input[@id='secondpassword']")).sendKeys("QA Academy");
+        Thread.sleep(1000);
+        //Clicamos em submit
+        driver.findElement(By.xpath("//button[@id='submitbtn']")).click();
+
+
+        //Finalizar
         Thread.sleep(10000);
         driver.quit();
 
