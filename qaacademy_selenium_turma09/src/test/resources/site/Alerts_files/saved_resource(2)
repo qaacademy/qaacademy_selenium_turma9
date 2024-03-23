@@ -1,0 +1,43 @@
+
+var ftGUID_7935339="5236E6D05ACB3B";
+var ftConfID_7935339="0";
+var ftParams_7935339="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fdemo.automationtesting.in%2FAlerts.html&gdpr=1&gdpr_consent=CP7kMoAP7kMoAEsACBENAsEoAP_gAEPgABBoINJD7D7FbSFCwHpzaLsAMAhHRsCAQoQAAASBAmABQAKQIAQCgkAQFASgBAACAAAAICZBIQAECAAACUAAQAAAAAAEAAAAAAAIIAAAgAEAAAAIAAACAAAAEAAIAAAAEAAAmAgAAIIACAAAhAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQOhQD2F2K2kKFkPCmQWYAQBCijYEAhQAAAAkCBIAAgAUgQAgFIIAgAIFAAAAAAAAAQEgCQAAQABAAAIACgAAAAAAIAAAAAAAQQAAAAAIAAAAAAAAEAAAAAAAQAAAAIAABEhCAAQQAEAAAAAAAQAAAAAAAAAAABAAA&us_privacy=${US_PRIVACY}&bundle_id=&site_url=https://demo.automationtesting.in/Alerts.html&ft_partnerimpid=ABAjH0hWpDvZpBTMz3d1BOzgnFcY&pub_id=1&sup_platform=1&cachebuster=5394.257181255302";
+var ftKeyword_7935339="";
+var ftCustom_7935339="";
+var ftSection_7935339="";
+var ftSegment_7935339="aixc";
+var ftSegmentList_7935339=[{s:'aixc'}];
+var ftRuleMatch_7935339="0";
+var ftTimestamp_7935339="1711210929";
+var ftGeoC2_7935339="pt";
+var ftGeoState_7935339="14";
+var ftGeoCity_7935339="moita redonda";
+var ftISP_7935339="meo";
+var ftSpeed_7935339="broadband";
+var ftConnType_7935339="wifi";
+var ftDMA_7935339="-1";
+var ftLong_7935339="-8.67";
+var ftLat_7935339="39.64";
+var ftPostal_7935339="2495-651";
+var ftTimeZone_7935339="+0";
+var ftMobileCarrier_7935339="";
+var ftImp7935339 = {};
+ftImp7935339.privacy = "y";
+ftImp7935339.guidAge = "690";
+ftImp7935339.impID = "C89E2701-3BC4-284B-9549-5B8C7428C9BA";
+ftImp7935339.duid = "FT:5236E6D05ACB3B";
+
+ftImp7935339.ft_tpplid = "";
+ftImp7935339.ft_c = {};
+ftImp7935339.gdpr = "1";
+ftImp7935339.gdpr_consent = "CP7kMoAP7kMoAEsACBENAsEoAP_gAEPgABBoINJD7D7FbSFCwHpzaLsAMAhHRsCAQoQAAASBAmABQAKQIAQCgkAQFASgBAACAAAAICZBIQAECAAACUAAQAAAAAAEAAAAAAAIIAAAgAEAAAAIAAACAAAAEAAIAAAAEAAAmAgAAIIACAAAhAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQOhQD2F2K2kKFkPCmQWYAQBCijYEAhQAAAAkCBIAAgAUgQAgFIIAgAIFAAAAAAAAAQEgCQAAQABAAAIACgAAAAAAIAAAAAAAQQAAAAAIAAAAAAAAEAAAAAAAQAAAAIAABEhCAAQQAEAAAAAAAQAAAAAAAAAAABAAA";
+ftImp7935339.gdpr_pd = "";
+ftImp7935339.oob_consent = "";
+ftImp7935339.gdprStoredConsent = "";
+ftImp7935339.us_privacy = "!!US_PRIVACY!";
+ftImp7935339.gpc = "";
+
+var ftCreativeId_7935339 = "4288033";
+document.write('<scr'+'ipt src="https://ajs-assets.ftstatic.com/ftUtils.js" id="ftscript_m7935339" name="ftscript_m7935339"></scr'+'ipt>');window.fTChecker=window.fTChecker||function(id){if(!id)return false;id=""+id;if(window.hasOwnProperty("ftUtils")){window["ft"+id]=Object.assign({},window.ftUtils.common);window["ft"+id].getBannerConfig(id)}else(function(id){window.setTimeout(function(){window.fTChecker(id)},50)})(id)};window.fTChecker("7935339");
+
+
