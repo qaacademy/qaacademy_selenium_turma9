@@ -5,15 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
+
 public class ExerciciosSelenium {
 
     @Test
     public void testSelenium() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
-        driver.get("https://demo.automationtesting.in/Register.html");
-        Thread.sleep(5000);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+        driver.get("https://demo.automationtesting.in/Register.html");
         driver.findElement(By.xpath("/html/body/div/div[2]/div[1]/div[2]/div[2]/button[1]/p")).click();
 
         //Campo primeiro nome
@@ -35,7 +37,6 @@ public class ExerciciosSelenium {
 
         //Expandir lista languages
         driver.findElement(By.xpath("//div[@id='msdd']")).click();
-        Thread.sleep(1000);
         //Clica na linguagem
         driver.findElement(By.xpath("//a[contains(text(),'Portuguese')]")).click();
 
@@ -65,13 +66,8 @@ public class ExerciciosSelenium {
         //Preenchemos a senhas
         driver.findElement(By.xpath("//input[@id='firstpassword']")).sendKeys("QA Academy");
         driver.findElement(By.xpath("//input[@id='secondpassword']")).sendKeys("QA Academy");
-        Thread.sleep(1000);
-        //Clicamos em submit
-        driver.findElement(By.xpath("//button[@id='submitbtn']")).click();
-
 
         //Finalizar
-        Thread.sleep(10000);
         driver.quit();
 
     }
